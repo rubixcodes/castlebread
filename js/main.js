@@ -273,9 +273,10 @@
                 };
     
                 var map = new google.maps.Map(document.getElementById('contact-map'), {
-                    scrollwheel: true,
+                    // scrollwheel: true,
                     zoom: 16,
-                    center: myLatLng
+                    center: myLatLng,
+                    gestureHandling: 'cooperative'
                 });
     
                 var marker = new google.maps.Marker({
